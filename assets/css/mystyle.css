@@ -1,0 +1,41 @@
+.font-fam {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.title {
+    font-family: 'Pacifico', cursive;
+}
+
+.titles {
+    font-family: 'Viga', sans-serif;
+}
+
+.footer{
+    background: #152F4F;
+    color:white;
+    margin-top: 190px;
+}
+    
+
+li a{
+        transition: color .2s;
+
+}
+li a:hover{
+          text-decoration:none;
+          color:#4180CB;
+          }
+
+.about-company  i{
+     font-size: 25px;}
+
+.about-company  a{
+        transition: color .2s;
+}
+.about-company a:hover{
+    color:#4180CB
+}
+  
+.location i{
+      font-size: 18px;
+}

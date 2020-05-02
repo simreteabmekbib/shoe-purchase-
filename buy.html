@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AddisShoes</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/6454e424b1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kalam|Libre+Franklin|Pacifico|Spicy+Rice|Viga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/mystyle.css">
+
+    <style>
+      label {
+        font-weight: bold;
+      }
+      button {
+        background-color: rgb(2, 2, 56);
+      }
+
+      h3 {
+        margin-top: 2%;
+      }
+
+      i {
+        font-size: 40px;
+      }
+
+  
+    </style>
+
+    
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="index.html">AdShoe</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#colNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+       </button>
+    
+        <div class="collapse navbar-collapse" id="colNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="service.html">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+            <!-- To the left side -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h4 class="font-fam">Buy Nike Shoes</h4>
+        </div>
+
+        <form>
+          <h3 class="titles">1. Shipping Address</h3>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputName">Full Name</label>
+              <input type="text" class="form-control" id="inputName" placeholder="Full Name">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputCountry">Country</label>
+              <select class="form-control" id="inputCountry">
+                <option>Ethiopia</option>
+                <option>United States</option>
+                <option>South Africa</option>
+                <option>Kenya</option>
+                <option>Djibouti</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="inputCity" placeholder="City">
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPhone">Phone Number</label>
+            <input type="number" class="form-control w-50" id="inputPhone" placeholder="Phone Number">
+        </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Use this address for billing
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-secondary">SHIP TO THIS ADDRESS</button>
+        </form>
+
+        <form>
+          <h3 class="titles">2. Payment</h3>
+          <div class="form-group">
+            <input type="radio" id="visa" name="visa" value="visa">
+            <label for="visa"><i class="fab fa-cc-visa" 10px></i></label><br>
+            <input type="radio" id="paypal" name="paypal" value="paypal">
+            <label for="paypal"><i class="fab fa-cc-paypal"></i></label><br>
+            <input type="radio" id="mastercard" name="mastercard" value="mastercard">
+            <label for="mastercard"><i class="fab fa-cc-mastercard"></i></label>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6" >
+              <label for="inputcardName">Name on Card</label>
+              <input type="text" class="form-control w-75" id="inputcardName" placeholder="Name on Card">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputCardNumber">Credit Card Number</label>
+              <input type="text" class="form-control w-75" id="inputCardNumber" placeholder="Credit Card Number">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputExp">Expiration</label>
+              <input type="text" class="form-control w-75" id="inputExp" placeholder="Expiration date">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="Cvv">CVV</label>
+              <input type="text" class="form-control w-75" id="Cvv" placeholder="CVV">
+            </div>
+          </div>
+        </form>
+
+        <div class="jumbotron w-50">
+        <h3 class="titles">3. Order Summary</h3>
+        <p>Order Total: $78.00</p>
+        <button type="submit" class="btn btn-secondary">Place your Order</button>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    
+    <div class="mt-5 pt-5 pb-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xs-12 about-company">
+              <h2>Heading</h2>
+              <p class="pr-5 text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis </p>
+              <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p>
+            </div>
+            <div class="col-lg-3 col-xs-12 links">
+              <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+                <ul class="m-0 p-0">
+                  <li>- <a href="#">Lorem ipsum</a></li>
+                  <li>- <a href="#">Nam mauris velit</a></li>
+                  <li>- <a href="#">Etiam vitae mauris</a></li>
+                  <li>- <a href="#">Fusce scelerisque</a></li>
+                  <li>- <a href="#">Sed faucibus</a></li>
+                  <li>- <a href="#">Mauris efficitur nulla</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-xs-12 location">
+              <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+              <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
+              <p class="mb-0"><i class="fa fa-phone mr-3"></i>(251) 911-3010</p>
+              <p><i class="fa fa-envelope-o mr-3"></i>se.simreteab.mekbib@gmail.com</p>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div>
+              <p class=""><small class="text-white-50">© 2019. All Rights Reserved.</small></p>
+            </div>
+          </div>
+        </div>
+        </div>
+  
+
+<script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="./assets/js/bootstrap.js"></script>
+</body>
+</html>
